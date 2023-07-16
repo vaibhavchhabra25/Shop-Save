@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My Wishlist</title>
+    <title>Universal Wishlist</title>
     <link rel="stylesheet" type="text/css" href="popup.css">
   </head>
   <body>
@@ -14,11 +14,16 @@
         <label for="details">Details:</label>
         <textarea id="details" name="details"></textarea>
         
-        <button type="submit">Add to Wishlist</button>
+        <button type="submit" id="addToWishlistBtn">Add to Wishlist</button>
       </form>
       
       <button id="viewWishlistBtn">View Wishlist</button>
-      <ul id="wishlistItems"></ul>
+      
+      <div id="wishlistContainer" style="display: none;">
+        <h2>My Wishlist</h2>
+        <ul id="wishlistItems"></ul>
+        <button id="backBtn">Back</button>
+      </div>
     </div>
     <script src="popup.js"></script>
   </body>
