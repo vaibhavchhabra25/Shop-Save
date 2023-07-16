@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Wishlist</title>
+    <link rel="stylesheet" type="text/css" href="popup.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Add Item to Wishlist</h1>
+      <form id="wishlistForm">
+        <label for="item">Item:</label>
+        <input type="text" id="item" name="item" required>
+        
+        <label for="details">Details:</label>
+        <textarea id="details" name="details"></textarea>
+        
+        <button type="submit">Add to Wishlist</button>
+      </form>
+      
+      <button id="viewWishlistBtn">View Wishlist</button>
+      <ul id="wishlistItems"></ul>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
